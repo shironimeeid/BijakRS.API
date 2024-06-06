@@ -1,90 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="https://telegra.ph/file/8fc6680cb5098394ec5b2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ServerBijak.RS</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>RS Bed Covid API</title>
     <style>
-       .mb-10 {
-            margin-bottom: 10px;
-        }
-       .list-group-item {
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-       .list-group-item strong {
-            font-weight: bold;
-            color: #337ab7;
-        }
-       .list-group-item a {
-            text-decoration: none;
-            color: #337ab7;
-        }
-       .list-group-item a:hover {
-            text-decoration: underline;
-        }
-       .mt-4 {
-            margin-top: 20px;
-        }
-       .network-speed {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 12px;
-            color: #666;
-        }
-       .current-time {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 12px;
-            color: #666;
-        }
+      ul > li {
+        margin-bottom: 10px;
+      }
     </style>
-</head>
-<body class="bg-light">
-    <div class="container py-5">
-        <div class="network-speed" id="network-speed"></div>
-        <div class="current-time" id="current-time"></div>
-        <h1 class="mb-3">Bijak.RS Local Server</h1>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <strong>Dapatkan semua data provinsi: &nbsp;</strong>
-                <a href="/api/get-provinces">https://bijak-rs-api.vercel.app/api/get-provinces</a>
-            </li>
-            <li class="list-group-item">
-                <strong>Dapatkan data kota atau kabupaten yang ada di provinsi tersebut: &nbsp;</strong>
-                <a href="/api/get-cities?provinceid=51prop">https://bijak-rs-api.vercel.app/api/get-cities?provinceid=51prop</a>
-            </li>
-            <li class="list-group-item">
-                <strong>Dapatkan data rumah sakit berdasarkan provinsi dan kota atau kecamatan: &nbsp;</strong>
-                <a href="/api/get-hospitals?provinceid=51prop&cityid=5171&type=1">https://bijak-rs-api.vercel.app/api/get-hospitals?provinceid=51prop&cityid=5171&type=1</a>
-            </li>
-            <li class="list-group-item">
-                <strong>Dapatkan data detail kapasitas ruangan atau kasur berdasarkan rumah sakit: &nbsp;</strong>
-                <a href="/api/get-bed-detail?hospitalid=5171133&type=1">https://bijak-rs-api.vercel.app/api/get-bed-detail?hospitalid=5171133&type=1</a>
-            </li>
-            <li class="list-group-item">
-                <strong>Dapatkan data peta rumah sakit: &nbsp;</strong>
-                <a href="/api/get-hospital-map?hospitalid=5171133">https://bijak-rs-api.vercel.app/api/get-hospital-map?hospitalid=5171133</a>
-            </li>
-        </ul>
-        <div class="mt-4">
-            <strong>NB: </strong><span>Untuk melihat daftar id provinsi, Anda bisa menggunakan <strong>API get provinces</strong> terlebih dahulu.</span>
-            <br>
-            <strong>NB: </strong><span>Untuk melihat daftar id kota atau kecamatan, Anda bisa menggunakan <strong>API get cities</strong> terlebih dahulu.</span>
-            <br>
-            <strong>NB: </strong><span>Query string type memiliki 2 optional value: <strong>1</strong> untuk covid dan <strong>2</strong> untuk non-covid</span>
-            <br>
-            <strong>NB: </strong><span>Untuk mendapatkan hospital id, Anda bisa menggunakan <strong>API get hospitals</strong> terlebih dahulu</span>
-            <br>
-            <span>Repositori github: <a href="https://github.com/shironimeeid/BijakRS.API">https://github.com/shironimeeid/BijakRS.API</a></span>
-        </div>
-    </div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </head>
+  <body>
+    <h1>RS Bed Covid API</h1>
+    <ul>
+      <li>
+        <strong>Dapatkan semua data provinsi: &nbsp;</strong>
+        <a href="/api/get-provinces">https://rs-bed-covid-api.vercel.app/api/get-provinces</a>
+      </li>
+      <li>
+        <strong>Dapatkan data kota atau kabupaten yang ada di provinsi tersebut: &nbsp;</strong>
+        <a href="/api/get-cities?provinceid=51prop">https://rs-bed-covid-api.vercel.app/api/get-cities?provinceid=51prop</a>
+      </li>
+      <li>
+        <strong>Dapatkan data rumah sakit berdasarkan provinsi dan kota atau kecamatan: &nbsp;</strong>
+        <a href="/api/get-hospitals?provinceid=51prop&cityid=5171&type=1">https://rs-bed-covid-api.vercel.app/api/get-hospitals?provinceid=51prop&cityid=5171&type=1</a>
+        <br>
+      </li>
+      <li>
+        <strong>Dapatkan data detail kapasitas ruangan atau kasur berdasarkan rumah sakit: &nbsp;</strong>
+        <a href="/api/get-bed-detail?hospitalid=5171133&type=1">https://rs-bed-covid-api.vercel.app/api/get-bed-detail?hospitalid=5171133&type=1</a>
+        <br>
+      </li>
+      <li>
+        <strong>Dapatkan data peta rumah sakit: &nbsp;</strong>
+        <a href="/api/get-hospital-map?hospitalid=5171133">https://rs-bed-covid-api.vercel.app/api/get-hospital-map?hospitalid=5171133</a>
+        <br>
+      </li>
+    </ul>
+    <strong style="margin-left:25px;">NB: </strong><span>Untuk melihat daftar id provinsi, Anda bisa menggunakan <strong>API get provinces</strong> terlebih dahulu.</span>
+    <br>
+    <strong style="margin-left:25px;">NB: </strong><span>Untuk melihat daftar id kota atau kecamatan, Anda bisa menggunakan <strong>API get cities</strong> terlebih dahulu.</span>
+    <br>
+    <strong style="margin-left:25px;">NB: </strong><span>Query string type memiliki 2 optional value: <strong>1</strong> untuk covid dan <strong>2</strong> untuk non-covid</span>
+    <br>
+    <strong style="margin-left:25px;">NB: </strong><span>Untuk mendapatkan hospital id, Anda bisa menggunakan <strong>API get hospitals</strong> terlebih dahulu</span>
+    <br>
+    <span style="margin-left:25px;">Repositori github: <a href="https://github.com/satyawikananda/rs-bed-covid-indo-api/">https://github.com/satyawikananda/rs-bed-covid-indo-api/</a></span>
+  </body>
 </html>
