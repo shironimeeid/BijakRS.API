@@ -1,6 +1,5 @@
-<div align="center">
-<h1>RS Bed Covid Indonesia API</h1>
 
+<<<<<<< HEAD
 <p>API ketersediaan rumah sakit yang berada di Indonesia</p>
 ⚠ <b>API ini mungkin terjadi kesalahan dikarenakan data pusat sering terjadi perubahan, jika menemukan kesalahan, silakan lapor ke issue atau jika ingin membantu silakan buat pull request</b> ⚠
 </div>
@@ -91,3 +90,5 @@ Merasa projek ini bermanfaat? Anda bisa dukung saya di platform donasi yang saya
 ![vercelbadge](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)
 
 Dibuat menggunakan Typescript. Kode berlisensi dibawah [MIT License](https://raw.githubusercontent.com/satyawikananda/rs-bed-covid-indo-api/main/LICENSE)
+=======
+>>>>>>> f03f26733e599c3e17814bdd279742b80c290c1d
