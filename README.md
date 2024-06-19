@@ -31,10 +31,10 @@ git clone https://github.com/satyawikananda/rs-bed-covid-indo-api.git
 
 2. Unduh `dependencies`
 
-Di kasus saya, saya menggunakan `pnpm` untuk `package manager`, Anda bisa menyesuaikan dengan `package manager` kesukaan Anda.
+Di kasus saya, saya menggunakan `npm` untuk `package manager`, Anda bisa menyesuaikan dengan `package manager` kesukaan Anda.
 
 ```
-pnpm install
+npm install
 ```
 
 # Kontribusi
